@@ -1,0 +1,30 @@
+[
+    {
+        "id": "cb5fea11.ebef48",
+        "type": "change",
+        "z": "ed3d8672.319aa8",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "$string($round((msg.payload.main.temp - 273.15),2))",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 600,
+        "y": 200,
+        "wires": [
+            [
+                "c2e7326.878ffd",
+                "2571c531.87ae1a"
+            ]
+        ]
+    }
+]
